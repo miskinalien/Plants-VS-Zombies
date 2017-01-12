@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9E761BF-AC8C-49C0-A888-5B773B21E18B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PvZ</RootNamespace>
+    <AssemblyName>Populous</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoublePistoPois.cs" />
+    <Compile Include="Move.cs" />
+    <Compile Include="Noix.cs" />
+    <Compile Include="Tournesol.cs" />
+    <Compile Include="ZombieDead.cs" />
+    <Compile Include="GE.cs" />
+    <Compile Include="HealthBar.cs" />
+    <Compile Include="PistoPois.cs" />
+    <Compile Include="Plant.cs" />
+    <Compile Include="Pois.cs" />
+    <Compile Include="Soleil.cs" />
+    <Compile Include="Spawner.cs" />
+    <Compile Include="_Coord.cs" />
+    <Compile Include="MouseClic.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Zombie.cs" />
+    <Compile Include="_Global.cs" />
+    <Compile Include="MainLoop.cs" />
+    <Compile Include="_Sprite.cs" />
+    <Compile Include="_SpriteManager.cs" />
+    <Compile Include="_Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Form1.Designer.cs">
+      <DependentUpon>_Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORE\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_TimeMeasure.cs" />
+    <EmbeddedResource Include="_Form1.resx">
+      <DependentUpon>_Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_canon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_pois.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_zombie.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mine_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mine_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plante_gel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plante_pois.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plante_soleil.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soleil.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sot_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sot_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sot_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tir_gel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tir_pois.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tondeuse.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boulet_canon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerises.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cone_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cone_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cone_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_cerises.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_fleur.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_gel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_mine.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_patate.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_pois_double.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noix_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noix_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noix_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plante_pois_double.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie_dead.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_zombie_sot.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie_cone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie_1_touche.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie_2_touche.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie_3_touche.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_noix.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
